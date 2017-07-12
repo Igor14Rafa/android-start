@@ -7,13 +7,15 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 /**
- * Created by Igor on 09/07/2017.
- */
-
+* Class used for fetch data from the desired site
+**/
 class FetchData extends AsyncTask<Void, Void, Void> {
     private String url = "http://www.ufpi.br/edital-praec";
     private String ultimo_edital = "";
-
+    /** Method used for fetch data from the desired site
+    * @param : none
+     * @return: null
+     **/
     @Override
     protected Void doInBackground(Void... params) {
         try{

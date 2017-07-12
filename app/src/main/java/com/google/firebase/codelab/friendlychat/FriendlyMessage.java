@@ -15,6 +15,9 @@
  */
 package com.google.firebase.codelab.friendlychat;
 
+/**
+ * Message Class
+ */
 public class FriendlyMessage {
 
     private String id;

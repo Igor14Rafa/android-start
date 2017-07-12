@@ -9,11 +9,17 @@ import android.content.Intent;
 import java.util.Calendar;
 
 /**
- * Created by Igor on 09/07/2017.
+ * Class used for controlling the app's notification.
  */
 
 class AlarmReceiver extends BroadcastReceiver{
     FetchData fetch = new FetchData();
+
+    /**
+     * Onreceive method. Acts under a predeterrmined intent. In this case, on device reboot.
+     * @param context
+     * @param intent
+     */
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {

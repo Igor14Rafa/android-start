@@ -334,6 +334,12 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    /**
+     * Show the user's profile image
+     * @param storageReference
+     * @param uri
+     * @param key
+     */
     private void putImageInStorage(StorageReference storageReference, Uri uri, final String key) {
         storageReference.putFile(uri).addOnCompleteListener(MainActivity.this,
                 new OnCompleteListener<UploadTask.TaskSnapshot>() {
@@ -354,6 +360,11 @@ public class MainActivity extends AppCompatActivity
                 });
     }
 
+    /**
+     * Show a notification when a new notice is launched.
+     * @param view
+     * @param uriaddress
+     */
     public void sendNotification(View view, String uriaddress) {
 
         NotificationCompat.Builder mBuilder =
